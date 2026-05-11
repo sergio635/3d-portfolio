@@ -1,0 +1,463 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 3592,
+      "max": [
+        1.084488868713379,
+        1.4231526851654053,
+        1.4730403423309326
+      ],
+      "min": [
+        -1.0848941802978516,
+        -2.2692182064056396,
+        -1.4417824745178223
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 43104,
+      "componentType": 5126,
+      "count": 3592,
+      "max": [
+        1.0,
+        0.9995802640914917,
+        0.9999983906745911
+      ],
+      "min": [
+        -1.0,
+        -0.9999487996101379,
+        -0.9999733567237854
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 3592,
+      "max": [
+        1.000000238418579,
+        1.0000001192092896
+      ],
+      "min": [
+        -2.5029903554241173e-06,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 28736,
+      "componentType": 5126,
+      "count": 3592,
+      "max": [
+        8.675517082214355,
+        8.923029899597168
+      ],
+      "min": [
+        -7.868492603302002,
+        -7.933568000793457
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 9702,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 86208,
+      "componentType": 5126,
+      "count": 19893,
+      "max": [
+        1.0844887495040894,
+        2.161092519760132,
+        1.9699063301086426
+      ],
+      "min": [
+        -1.0848941802978516,
+        -3.1774485111236572,
+        -1.526409387588501
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 324924,
+      "componentType": 5126,
+      "count": 19893,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 57472,
+      "componentType": 5126,
+      "count": 19893,
+      "max": [
+        1.0000025033950806,
+        1.0000001192092896
+      ],
+      "min": [
+        -2.5029903554241173e-06,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 216616,
+      "componentType": 5126,
+      "count": 19893,
+      "max": [
+        1.0000025033950806,
+        1.0000001192092896
+      ],
+      "min": [
+        -2.5029903554241173e-06,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 38808,
+      "componentType": 5125,
+      "count": 59685,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 563640,
+      "componentType": 5126,
+      "count": 21,
+      "max": [
+        0.19381046295166016,
+        -2.674621343612671,
+        1.5684642791748047
+      ],
+      "min": [
+        -0.2615596055984497,
+        -2.756513833999634,
+        1.504945158958435
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 563892,
+      "componentType": 5126,
+      "count": 21,
+      "max": [
+        0.8741706609725952,
+        0.341827929019928,
+        0.43613752722740173
+      ],
+      "min": [
+        -0.8687658905982971,
+        -0.7676630616188049,
+        -0.833195149898529
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 375760,
+      "componentType": 5126,
+      "count": 21,
+      "max": [
+        0.0,
+        0.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 375928,
+      "componentType": 5126,
+      "count": 21,
+      "max": [
+        0.0,
+        0.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 277548,
+      "componentType": 5125,
+      "count": 39,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "DevPoly3D (https://sketchfab.com/DevPoly3D)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/futuristic-robotic-horse-sci-fi-mech-animal-193f39c0ee104e6099fbf6a4f548c426",
+      "title": "Futuristic Robotic Horse | Sci-Fi Mech Animal"
+    },
+    "generator": "Sketchfab-16.75.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 277704,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 376096,
+      "byteOffset": 277704,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 564144,
+      "byteOffset": 653800,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1217944,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_emissive_strength"
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Red_shiny_tiles",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.775209617965722,
+          0.775209617965722,
+          0.775209617965722,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.9952598413368233
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Touched_Plastic_Rough",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.12856811131236873,
+          0.12265925881109979,
+          0.12265925881109979,
+          1.0
+        ],
+        "roughnessFactor": 0.30933427606636515
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0.005097615027984849,
+        1.0,
+        0.0
+      ],
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 10.0
+        }
+      },
+      "name": "Material.001",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0,
+          1.0,
+          0.006072930432828712,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8040408205773457
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Cube.003_Red shiny tiles_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2,
+            "TEXCOORD_1": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Cube.003_Touched Plastic Rough_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 6,
+            "POSITION": 5,
+            "TEXCOORD_0": 7,
+            "TEXCOORD_1": 8
+          },
+          "indices": 9,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Cube.003_Material.001_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 11,
+            "POSITION": 10,
+            "TEXCOORD_0": 12,
+            "TEXCOORD_1": 13
+          },
+          "indices": 14,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "untitled.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        5,
+        6
+      ],
+      "matrix": [
+        32.68965148925781,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -7.7781834082215e-06,
+        -47.74214935302671,
+        0.0,
+        0.0,
+        47.74214935302671,
+        -7.7781834082215e-06,
+        0.0,
+        0.0,
+        70.85273742675781,
+        0.0,
+        1.0
+      ],
+      "name": "Cube.003"
+    },
+    {
+      "mesh": 0,
+      "name": "Cube.003_Red shiny tiles_0"
+    },
+    {
+      "mesh": 1,
+      "name": "Cube.003_Touched Plastic Rough_0"
+    },
+    {
+      "mesh": 2,
+      "name": "Cube.003_Material.001_0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
