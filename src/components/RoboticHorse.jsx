@@ -1,8 +1,13 @@
 import React from 'react'
 import { useGLTF } from '@react-three/drei'
+import { useRef } from 'react'
+
 
 const RoboticHorse = (props) => {
+ 
   const { nodes } = useGLTF('/models/RoboticHorse/scene-transformed.glb')
+
+
 
   return (
     <group {...props} dispose={null}>

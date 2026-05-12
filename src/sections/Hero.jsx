@@ -3,18 +3,33 @@ import { Canvas } from '@react-three/fiber'
 import RoboticHorse from '../components/RoboticHorse'
 import { Suspense } from 'react'
 import CanvasLoader from '../components/CanvasLoader'
-import { useControls } from 'leva'
+import { Leva, useControls } from 'leva'
 import { useMediaQuery } from 'react-responsive'
 import Target from '../components/Target'
 import { calculateSizes } from '../constants/index'
 
+ 
+
 const Hero = () => {
+
+   const controls = useControls({
+    // Rotación
+    rotationX: { value: 0.1, min: -Math.PI, max: Math.PI, step: 0.01 },
+    rotationY: { value: -0.6, min: -Math.PI, max: Math.PI, step: 0.01 },
+    rotationZ: { value: 0, min: -Math.PI, max: Math.PI, step: 0.01 },
+    // Escala
+    scale: { value: 1.8, min: 0.1, max: 10, step: 0.1 },
+    // Posición
+    positionX: { value: 2, min: -20, max: 20, step: 0.1 },
+    positionY: { value: -2.5, min: -20, max: 20, step: 0.1 },
+    positionZ: { value: 0, min: -20, max: 20, step: 0.1 },
+  })
 
   const isMobile = useMediaQuery({ maxWidth: 768 })
   const isSmall = useMediaQuery({ maxWidth: 480 })
   const isTablet = useMediaQuery({ maxWidth: 1024 })
 
-  const sizes = calculateSizes(isMobile, isSmall, isTablet);
+  const sizes = calculateSizes(isSmall, isMobile, isTablet);
 
   return (
     <section className='min-h-screen w-full flex flex-col relative'>
@@ -28,7 +43,7 @@ const Hero = () => {
       </div>
 
       <div className='w-full h-screen absolute inset-0'>
-       
+       <Leva></Leva>
         <Canvas className='w-full h-full'>
           <PerspectiveCamera makeDefault position={[0, 0, 20]} near={0.01} far={1000} />
 
@@ -38,13 +53,12 @@ const Hero = () => {
 
           <Suspense fallback={<CanvasLoader />}>
             <RoboticHorse
-              scale={sizes.deskScale}
-              position={sizes.deskPosition}
-              rotation={[3.1, 3.7, 3 ]}
-              //scale={[controls.scale, controls.scale, controls.scale]}
-              
-              //rotation={[controls.rotationX, controls.rotationY, controls.rotationZ]}
-              //position={[controls.positionX, controls.positionY - 12 , controls.positionZ]}
+              //scale={sizes.deskScale}
+              //position={sizes.deskPosition}
+              //rotation={[0, -0.6, 0 ]}
+              scale={controls.scale}
+              position={[controls.positionX, controls.positionY, controls.positionZ]}
+              rotation={[controls.rotationX, controls.rotationY, controls.rotationZ]}
             />
               <group>
               <Target position={sizes.targetPosition}/>
@@ -54,7 +68,6 @@ const Hero = () => {
             <directionalLight position={[10, 10, 10]} intensity={1} color="#FFF5E0" />
           </Suspense>
 
-          <OrbitControls enableZoom={false}  />
         </Canvas>
       </div>
     </section>
