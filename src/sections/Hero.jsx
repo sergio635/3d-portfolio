@@ -7,12 +7,15 @@ import { Leva, useControls } from 'leva'
 import { useMediaQuery } from 'react-responsive'
 import Target from '../components/Target'
 import { calculateSizes } from '../constants/index'
+import ReactLogo from '../components/ReactLogo'
+import Compass from '../components/Compass'
+import Pig from '../components/Pig'
 
  
 
 const Hero = () => {
 
-   const controls = useControls({
+   /*const controls = useControls({
     // Rotación
     rotationX: { value: 0.1, min: -Math.PI, max: Math.PI, step: 0.01 },
     rotationY: { value: -0.6, min: -Math.PI, max: Math.PI, step: 0.01 },
@@ -23,13 +26,14 @@ const Hero = () => {
     positionX: { value: 2, min: -20, max: 20, step: 0.1 },
     positionY: { value: -2.5, min: -20, max: 20, step: 0.1 },
     positionZ: { value: 0, min: -20, max: 20, step: 0.1 },
-  })
+  })*/
 
-  const isMobile = useMediaQuery({ maxWidth: 768 })
-  const isSmall = useMediaQuery({ maxWidth: 480 })
+  const isSmall = useMediaQuery({ maxWidth: 400 })
+  const isMobile = useMediaQuery({ maxWidth: 640 })
   const isTablet = useMediaQuery({ maxWidth: 1024 })
+   const isDesktop = useMediaQuery({ maxWidth: 1280 })
 
-  const sizes = calculateSizes(isSmall, isMobile, isTablet);
+  const sizes = calculateSizes(isSmall, isMobile, isTablet, isDesktop);
 
   return (
     <section className='min-h-screen w-full flex flex-col relative'>
@@ -43,7 +47,6 @@ const Hero = () => {
       </div>
 
       <div className='w-full h-screen absolute inset-0'>
-       <Leva></Leva>
         <Canvas className='w-full h-full'>
           <PerspectiveCamera makeDefault position={[0, 0, 20]} near={0.01} far={1000} />
 
@@ -53,15 +56,21 @@ const Hero = () => {
 
           <Suspense fallback={<CanvasLoader />}>
             <RoboticHorse
-              //scale={sizes.deskScale}
-              //position={sizes.deskPosition}
-              //rotation={[0, -0.6, 0 ]}
-              scale={controls.scale}
-              position={[controls.positionX, controls.positionY, controls.positionZ]}
-              rotation={[controls.rotationX, controls.rotationY, controls.rotationZ]}
+              scale={sizes.deskScale}
+              position={sizes.deskPosition}
+              rotation={[0.10, -0.6, 0 ]}
+              //scale={controls.scale}
+              //position={[controls.positionX, controls.positionY, controls.positionZ]}
+              //rotation={[controls.rotationX, controls.rotationY, controls.rotationZ]}
             />
-              <group>
-              <Target position={sizes.targetPosition}/>
+            <group>
+              <Target 
+                
+                position={sizes.targettPosition}
+              />
+              <ReactLogo position={sizes.reactLogooPosition} />
+              <Compass position={sizes.compassPosition} />
+              <Pig position={sizes.pigPosition} />
             </group>
             
             <ambientLight intensity={0.5} />
